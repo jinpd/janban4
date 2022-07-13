@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="../css/reset.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/mstyle.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/font.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/flat-ui.css" >
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+<div class="top_fixed">
+    <div class="sub_tit">
+        <span><a href="javascript:history.back()"><img src="../img/common/bt_Back.png" class="img-half"></a></span>
+        온라인 문의
+    </div>
+</div>
+    <div class="sub_container mfixed">
+        <div class="bbs_inp">
+            <textarea class="inp_txtr" name="" placeholder="문의 내용을 입력해주세요"></textarea>
+            <button type="submit" class="btn_base mt20" id="">
+                <span class="text">문의 등록</span>
+            </button> 
+        </div>
+
+
+
+        <ul class="bbs_list">
+            <li>                
+                <a href="inquiry_view.html">
+                    <em>2022.04.12  10:00</em>
+                    <div class="clamp">문의 내용이 보여집니다. 내용이 너무 길어서 3줄이 넘어 가면 이후 ...처리 됩니다. 내용의 3줄까지만 보여지고 클릭해서 문의 내용 보기에서 문의 내용을 모두  확인 할 수 있습니다.                        
+                    </div>                    
+                </a>
+                <div class="bbs_iconbx">
+                    <div class="txt_icon b_point">답변완료</div>
+                    <div class="icon_bt"><a href="#none"><img src="../img/common/icon_del.png"  width="14"></a></div>
+                </div>
+            </li>
+            <li>                
+                <a href="inquiry_view.html">
+                    <em>2022.04.12  10:00</em>
+                    <div class="clamp">문의 내용이 보여집니다. 
+                    </div>               
+                </a>
+                <div class="bbs_iconbx">
+                    <div class="txt_icon b_gray">답변대기</div>
+                    <div class="icon_bt"><a href="#none"><img src="../img/common/icon_del.png"  width="14"></a></div>
+                </div>
+            </li>            
+        </ul>
+        <!--데이터  없을시-->
+        <div class="nonedb"><span class="fui-alert-circle pr10"></span>문의 내용이 없습니다.</div>
+    </div>
+
+
+
+
+
+
+
+    <script src="../js/common.js"></script>
+    <script src="../js/flat-ui.js"></script>
+    <script src="../js/application.js"></script>
+
+</body>
+</html>

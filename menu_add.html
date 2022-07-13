@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="../css/reset.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/mstyle.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/font.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/flat-ui.css" >
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="top_fixed">
+    <div class="sub_tit">
+        <div class="sub_date">2022년 6월 26일 <em>[ 아침 ]</em></div>
+        <span><a href="javascript:history.back()"><img src="../img/common/bt_Back.png" class="img-half"></a></span>
+        
+    </div>
+</div>
+    <!--@@@@코스선택(ABC)을 어떤식으로 저장할 것인지 PM과 상의가 필요해서 우선 라디오버튼으로 A코스 입력 후 저장뒤 B코스 추가 입력으로 했습니다.-->
+
+    <div class="sub_container mfixed">
+       <div class="menu_add">
+            <ul>
+                <li>
+                    <div class="radio-menu">
+                        <input type="radio" id="radio11" name="radio" value="A" checked>
+                        <label for="radio11">A</label>
+                    
+                        <input type="radio" id="radio22" name="radio" value="B">
+                        <label for="radio22">B</label>
+                    
+                        <input type="radio" id="radio33" name="radio" value="C">
+                        <label for="radio33">C</label> 
+                    </div>            
+                    
+                </li>
+                <li>
+                    <div class="inp-box">
+                        <input type="text" id="" name="" value="" placeholder="메뉴명" class="base_inp">     
+                        <textarea class="inp_txtr mb5" name="" placeholder="메뉴를 순서대로 콤마(,)구분으로 작성해 주세요"></textarea>
+                        <span class="inp_msg_gray">예)콩나물해장국,계란말이,배추김치,양파초절임</span>
+                                       
+                    </div>
+                </li>
+                <li>
+                    <div class="w40 fl"><input type="text" id="" name="" value="" placeholder="칼로리." class="base_inp"></div>
+                    <div style="line-height:72px; margin-left: 10px; float: left;">Kcal</div>
+                </li>
+               
+
+                <li>
+                    <div class="filebox">
+                        <div class="fl mr20"><a href="#none"><img src="../img/common/icon_camera.png" width="41"></a></div>
+                        <label for="imageSelector"></label>       
+                        <input type="file" class="hidden_input" id="imageSelector" name="imageSelector"  multiple />
+                        <div class="fileimg"> <img src="../img/common/preview.png" class="thumb"/></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit_base">빈그릇 무게</div>
+                    <div class="radio-bowl">
+                        <input type="radio" id="radio-bowl1" name="radio" value="" checked>
+                        <label for="radio-bowl1">기본<span>(490g)</span></label>
+                    
+                        <input type="radio" id="radio-bowl2" name="radio" value="">
+                        <label for="radio-bowl2">뚝배기<span>(490g)</span></label>
+                    
+                        <input type="radio" id="radio-bowl3" name="radio" value="">
+                        <label for="radio-bowl3">식판<span>(490g)</span></label> 
+                        
+                        <input type="radio" id="radio-bowl4" name="radio" value="">
+                        <label for="radio-bowl4">냄비<span>(490g)</span></label>
+            
+                        <a href="#" id="bowl_opener"><em>+</em></a></label>
+                    </div>      
+                   
+                </li>
+            </ul>
+            <button type="submit" class="btn_base" id="">
+                <span class="text">저장</span>
+            </button>    
+        </div>
+            
+    </div>
+
+    <!--그릇추가모달-->
+    <div id="bowl" class="dialog">
+        <div class="modal_title">빈 그릇 무게 추가</div>
+        <p class="dialog_content">
+            <ul class="record_w w80">
+                <li>
+                    명칭
+                    <input type="text" id="" name="" value=""  class="line_inp02 w90">
+                </li>
+                <li>
+                    무게 
+                    <input type="text" id="" name="" value="" class="line_inp02 w80">g
+                </li>
+               </ul>  
+        </p>
+        <div class="pop_btbx">   
+            <button type="button" id="modal_cancel" class="btn_closed mr10">닫기</button>
+            <button type="button" id="modal_ok" class="btn_add">추가</button>
+        </div>
+    </div>
+    <!--업로드-->
+    <script type="text/javascript" src="../js/upload.js"></script>
+    <!--그릇무게추가-->
+    <script src="../js/jquery-simple-dialog.js"></script>
+    <script>
+        
+        $('#bowl').simpleDialog({
+          opener: '#bowl_opener',
+          closer: '#modal_ok,#modal_cancel',
+          modal: true
+        });
+        
+    </script>
+    <script src="../js/common.js"></script>
+    <script src="../js/flat-ui.js"></script>
+    <script src="../js/application.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="../css/reset.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/mstyle.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/font.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/flat-ui.css" >
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+<div class="top_fixed">
+    <div class="sub_tit">
+        <span><a href="javascript:history.back()"><img src="../img/common/bt_Back.png" class="img-half"></a></span>
+        코스세팅 <a href="course_add.html" class="sub_tit_right">일괄등록</a>
+    </div>
+</div>
+
+    <div class="sub_container mfixed">
+        <div class="course_tbl">
+            <ul>
+                <li class="titles">
+                    <div>
+                        <p>요일</p>
+                    </div>
+                    <div>
+                        <p>                           
+                            <label class="checkbox" for="A">
+                            <input type="checkbox" value="" id="A" data-toggle="checkbox" checked>
+                            A
+                            </label>                          
+                        </p>
+                    </div>
+                    <div>
+                        <p>                           
+                            <label class="checkbox" for="B">
+                            <input type="checkbox" value="" id="B" data-toggle="checkbox" checked>
+                            B
+                            </label>                          
+                        </p>
+                    </div>
+                    <div>
+                        <p>                           
+                            <label class="checkbox" for="C">
+                            <input type="checkbox" value="" id="C" data-toggle="checkbox" >
+                            C
+                        </p>
+                    </div>  
+                    <div class="hide">수정버튼</div>                         
+                                  
+                </li>
+                <!--월요일-->
+                <li class="checkbx_tbl">
+                    <table width="100%">
+                        <caption>코스세팅표</caption>
+                        <colgroup>
+                        <col width="10%" />
+                        <col width="15%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="15%" />
+                        </colgroup>
+                         <!--월 아침 시작-->
+                        <tr>                           
+                          <td rowspan="4">월</td>
+                          <td>아침</td>
+                          <td>
+                           <!--//체크박스1set-->
+                            <div>
+                                <p>                           
+                                    <label class="checkbox" for="A1">
+                                    <input type="checkbox" value="" id="A1" data-toggle="checkbox" checked>
+                                    한식
+                                    </label>                          
+                                </p>
+                            </div>
+                            <!--체크박스1set//-->
+                          </td>
+                          <td>
+                            <div>
+                                <p>                           
+                                    <label class="checkbox" for="B1">
+                                    <input type="checkbox" value="" id="B1" data-toggle="checkbox" checked>
+                                    양식
+                                    </label>                          
+                                </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                                <p>                           
+                                    <label class="checkbox" for="C1">
+                                    <input type="checkbox" value="" id="C1" data-toggle="checkbox" >
+                                    
+                                </p>
+                            </div>
+                             
+                          </td>
+                          <td><a href="#none" class="course_opener">
+                                <img src="../img/common/pen.png" width="24" alt="수정버튼">
+                              </a>
+                          </td>                         
+                        </tr>
+                         <!--월 아침끝--> 
+                        <tr>
+                          <td>점심</td>
+                          <td>
+                            <!--//체크박스1set-->
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="A11">
+                                     <input type="checkbox" value="" id="A11" data-toggle="checkbox" checked>
+                                     한식
+                                     </label>                          
+                                 </p>
+                             </div>
+                             <!--체크박스1set//-->
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="B11">
+                                     <input type="checkbox" value="" id="B11" data-toggle="checkbox" checked>
+                                     양식
+                                     </label>                          
+                                 </p>
+                             </div>
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="C11">
+                                     <input type="checkbox" value="" id="C11" data-toggle="checkbox" >
+                                     
+                                 </p>
+                             </div>
+                              
+                           </td>
+                           <td><a href="#none" class="course_opener">
+                                 <img src="../img/common/pen.png" width="24" alt="수정버튼">
+                               </a>
+                           </td> 
+                        </tr>
+                        <tr>
+                          <td>저녁</td>
+                          <td>
+                            <!--//체크박스1set-->
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="A">
+                                     <input type="checkbox" value="" id="A" data-toggle="checkbox" checked>
+                                     한식
+                                     </label>                          
+                                 </p>
+                             </div>
+                             <!--체크박스1set//-->
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="B">
+                                     <input type="checkbox" value="" id="B" data-toggle="checkbox" checked>
+                                     양식
+                                     </label>                          
+                                 </p>
+                             </div>
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="C">
+                                     <input type="checkbox" value="" id="C" data-toggle="checkbox" >
+                                     
+                                 </p>
+                             </div>
+                              
+                           </td>
+                           <td><a href="#none" class="course_opener">
+                                 <img src="../img/common/pen.png" width="24" alt="수정버튼">
+                               </a>
+                           </td> 
+                        </tr>
+                        <tr>
+                          <td>야식</td>
+                          <td>
+                            <!--//체크박스1set-->
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="A">
+                                     <input type="checkbox" value="" id="A" data-toggle="checkbox" checked>
+                                     한식
+                                     </label>                          
+                                 </p>
+                             </div>
+                             <!--체크박스1set//-->
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="B">
+                                     <input type="checkbox" value="" id="B" data-toggle="checkbox" checked>
+                                     양식
+                                     </label>                          
+                                 </p>
+                             </div>
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="C">
+                                     <input type="checkbox" value="" id="C" data-toggle="checkbox" >
+                                     
+                                 </p>
+                             </div>
+                              
+                           </td>
+                           <td><a href="#none" class="course_opener">
+                                 <img src="../img/common/pen.png" width="24" alt="수정버튼">
+                               </a>
+                           </td> 
+                        </tr>
+                    </table>
+                </li>
+                <!--화요일-->
+                <li class="checkbx_tbl">
+                    <table width="100%">
+                        <caption>코스세팅표</caption>
+                        <colgroup>
+                        <col width="10%" />
+                        <col width="15%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="15%" />
+                        </colgroup>
+                        <tr>                           
+                          <td rowspan="4">화</td>
+                          <td>아침</td>
+                          <td>
+                           <!--//체크박스1set-->
+                            <div>
+                                <p>                           
+                                    <label class="checkbox" for="A2">
+                                    <input type="checkbox" value="" id="A2" data-toggle="checkbox" checked>
+                                    한식
+                                    </label>                          
+                                </p>
+                            </div>
+                            <!--체크박스1set//-->
+                          </td>
+                          <td>
+                            <div>
+                                <p>                           
+                                    <label class="checkbox" for="B2">
+                                    <input type="checkbox" value="" id="B2" data-toggle="checkbox" checked>
+                                    양식
+                                    </label>                          
+                                </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                                <p>                           
+                                    <label class="checkbox" for="C2">
+                                    <input type="checkbox" value="" id="C2" data-toggle="checkbox" >
+                                    
+                                </p>
+                            </div>
+                             
+                          </td>
+                          <td><a href="#none" class="course_opener">
+                                <img src="../img/common/pen.png" width="24" alt="수정버튼">
+                              </a>
+                          </td>                         
+                        </tr>
+                        
+                        <tr>
+                          <td>점심</td>
+                          <td>
+                            <!--//체크박스1set-->
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="A22">
+                                     <input type="checkbox" value="" id="A22" data-toggle="checkbox" checked>
+                                     한식
+                                     </label>                          
+                                 </p>
+                             </div>
+                             <!--체크박스1set//-->
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="B22">
+                                     <input type="checkbox" value="" id="B22" data-toggle="checkbox" checked>
+                                     양식
+                                     </label>                          
+                                 </p>
+                             </div>
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="C22">
+                                     <input type="checkbox" value="" id="C22" data-toggle="checkbox" >
+                                     
+                                 </p>
+                             </div>
+                              
+                           </td>
+                           <td><a href="#none" class="course_opener">
+                                 <img src="../img/common/pen.png" width="24" alt="수정버튼">
+                               </a>
+                           </td> 
+                        </tr>
+                        <tr>
+                          <td>저녁</td>
+                          <td>
+                            <!--//체크박스1set-->
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="A3">
+                                     <input type="checkbox" value="" id="A3" data-toggle="checkbox" checked>
+                                     한식
+                                     </label>                          
+                                 </p>
+                             </div>
+                             <!--체크박스1set//-->
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="B3">
+                                     <input type="checkbox" value="" id="B3" data-toggle="checkbox" checked>
+                                     양식
+                                     </label>                          
+                                 </p>
+                             </div>
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="C3">
+                                     <input type="checkbox" value="" id="C3" data-toggle="checkbox" >
+                                     
+                                 </p>
+                             </div>
+                              
+                           </td>
+                           <td><a href="#none" class="course_opener">
+                                 <img src="../img/common/pen.png" width="24" alt="수정버튼">
+                               </a>
+                           </td> 
+                        </tr>
+                        <tr>
+                          <td>야식</td>
+                          <td>
+                            <!--//체크박스1set-->
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="A33">
+                                     <input type="checkbox" value="" id="A33" data-toggle="checkbox" checked>
+                                     한식
+                                     </label>                          
+                                 </p>
+                             </div>
+                             <!--체크박스1set//-->
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="B33">
+                                     <input type="checkbox" value="" id="B33" data-toggle="checkbox" checked>
+                                     양식
+                                     </label>                          
+                                 </p>
+                             </div>
+                           </td>
+                           <td>
+                             <div>
+                                 <p>                           
+                                     <label class="checkbox" for="C33">
+                                     <input type="checkbox" value="" id="C33" data-toggle="checkbox" >
+                                     
+                                 </p>
+                             </div>
+                              
+                           </td>
+                           <td><a href="#none" class="course_opener">
+                                 <img src="../img/common/pen.png" width="24" alt="수정버튼">
+                               </a>
+                           </td> 
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        나머지 수목금토일 프로그래밍으로 반복합니다.
+     
+    </div>   
+
+
+    <!--코스입력 모달-->
+    <div id="course" class="dialog">
+        <div class="modal_title">코스 입력</div>
+        <p class="dialog_content">
+            <p class="tac"><strong>화요일</strong></p>
+            <ul class="record_w pd5 w80">
+                <li>
+                    <p>                           
+                        <label class="checkbox" for="A">
+                        <input type="checkbox" value="" id="A"  data-toggle="checkbox" checked>
+                        A
+                        </label>                          
+                    </p>
+                    <input type="text" id="" name="" value=""  class="line_inp02 w80"   placeholder="한식">
+                </li>
+                <li>
+                <p>                           
+                    <label class="checkbox" for="B">
+                    <input type="checkbox" value="" id="B"  data-toggle="checkbox" >
+                    B
+                    </label>                          
+                </p>
+                    <input type="text" id="" name="" value=""  class="line_inp02 w80"   placeholder="일식">
+                </li>
+                <li>
+                    <p>                           
+                        <label class="checkbox" for="C">
+                        <input type="checkbox" value="" id="C"  data-toggle="checkbox" >
+                        C
+                        </label>                          
+                    </p>
+                        <input type="text" id="" name="" value=""  class="line_inp02 w80"   placeholder="중식">
+                    </li>
+            </ul>  
+        </p>
+        <div class="pop_btbx">   
+            <button type="button" id="modal_cancel" class="btn_closed mr10">닫기</button>
+            <button type="button" id="modal_ok" class="btn_add">저장</button>
+        </div>
+    </div>
+
+    <script src="../js/jquery-simple-dialog.js"></script>
+    <script>
+        $('#course').simpleDialog({
+        opener: '.course_opener',
+        closer: '#modal_ok,#modal_cancel',
+        modal: true
+        });
+    </script>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/flat-ui.js"></script>
+    <script src="../js/application.js"></script>
+
+</body>
+</html>

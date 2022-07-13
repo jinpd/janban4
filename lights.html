@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="../css/reset.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/mstyle.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/font.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/flat-ui.css" >
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+
+
+    <div class="sub_tit">
+        <span><a href="javascript:history.back()"><img src="../img/common/bt_Back.png" class="img-half"></a></span>
+        잔반 신호등 <a href="#none" class="lights_opener"><img src="../img/common/icon_mody.png" width="20" alt="수정아이콘">수정</a>
+    </div>
+
+
+    <div class="sub_container">
+        <div class="sub_light">
+            <img src="../img/common/light03.png" width="29">
+            적게 남겼습니다. <span>0g ~ 50g</span>
+        </div>
+        <div class="sub_light">
+            <img src="../img/common/light02.png" width="29">
+            적당히 남겼습니다. <span>51g ~ 99g</span>
+        </div>
+        <div class="sub_light">
+            <img src="../img/common/light01.png" width="29">
+            많이 남겼습니다. <span>100g ~</span>
+        </div>
+    
+    </div>
+    <!--그릇추가모달-->
+    <div id="lights" class="dialog">
+        <div class="modal_title">잔반 신호등 기준 수정 </div>
+        <p class="dialog_content">
+            <div class="light_pop">
+                <img src="../img/common/light03.png" width="29">
+                <p><input type="text" id="" name="" value="적게 남겼습니다"  class="line_inp w90"> </p>
+                <p>0g ~ <input type="text" id="" name="" value=""  class="line_inp w20"> . <input type="text" id="" name="" value=""  class="line_inp w20">g</p>
+            </div>
+            <div class="light_pop">
+                <img src="../img/common/light02.png" width="29">
+                <p><input type="text" id="" name="" value="적당히 남겼습니다."  class="line_inp w90"> </p>
+                <p> <input type="text" id="" name="" value=""  class="line_inp w15"> . <input type="text" id="" name="" value=""  class="line_inp w15">g
+                     ~ <input type="text" id="" name="" value=""  class="line_inp w15"> . <input type="text" id="" name="" value=""  class="line_inp w15">g
+                </p>
+
+            </div>
+            <div class="light_pop">
+                <img src="../img/common/light01.png" width="29">
+                <p><input type="text" id="" name="" value="많이 남겼습니다."  class="line_inp w90"> </p>
+                <p></p><input type="text" id="" name="" value=""  class="line_inp w20"> . <input type="text" id="" name="" value=""  class="line_inp w20">g ~</p>
+            </div>
+        </p>
+        <div class="mmg_auto mb20 mt20 tac">   
+            <button type="button"  class="btn_s_line wp80 modal_ok"><span class="text">닫기</span></button>
+            <button type="submit"  class="btn_s wp130 ml10"><span class="text">저장</span></button>
+        </div>    
+    </div>
+
+
+    <!--메뉴상세팝업-->
+    <script src="../js/jquery-simple-dialog.js"></script>
+    <script>
+        
+        $('#lights').simpleDialog({
+          opener: '.lights_opener',
+          closer: '.modal_ok,#modal_cancel',
+          modal: true
+        });        
+    </script>
+
+    
+    <script src="../js/common.js"></script>
+    <script src="../js/flat-ui.js"></script>
+    <script src="../js/application.js"></script>
+
+</body>
+</html>

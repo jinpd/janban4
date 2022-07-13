@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="../css/reset.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/mstyle.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/font.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/flat-ui.css" >
+   
+    <script src="../js/jquery.min.js"></script>
+   
+</head>
+<style>
+
+</style>
+<body>
+
+
+
+
+    <div class="sub_tit">
+        <span><a href="javascript:history.back()"><img src="../img/common/bt_Back.png" class="img-half"></a></span>
+        메뉴순위
+    </div>
+
+    <div class="sub_container">
+        <div class="fl mt20"><a href="#none" id="slide-up-btn"><img src="../img/common/icon_cal.png" width="24"> 2022년 6월 01일 ~31</a></div>
+        <div class="fr mt10 mb10 selectBox">
+            <select  class="star" name="" >
+                <option value="" >모두</option>
+                <option value="0" selected>★★★★★</option><!--별5개 데이터노출-->
+                <option value="1">★★★★</option><!--별4개 ~ 4개반 데이터 노출-->
+                <option value="2">★★★</option>
+                <option value="3">★★</option>
+                <option value="4" >★</option>
+              </select>
+              <span class="icoArrow"><img src="../img/common/bl_down.png" alt="다른선택" width="12"></span>
+        </div>
+       
+         <hr/>   
+        <div class="star_list">
+            <ul>
+                <li class="star_con titbg">
+                    <span>순위</span>
+                    <span>날짜</span>
+                    <span>메뉴</span>
+                    <span class="pr20">평점</span>
+                </li>
+                <li class="star_con">
+                    <span>1</span>
+                    <span>22.04.11</span>
+                    <span>닭살 닭 덮밥닭살 닭 덮밥닭살 닭 덮밥닭살 닭 덮밥</span>
+                    <span><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"></span>
+                    <!--3종류 별  전체색star-full.png / 반만 칠한색star-half / 칠하지 않은 색 star-none-->
+                </li>
+                <li class="star_con">
+                    <span>2</span>
+                    <span>22.04.10</span>
+                    <span>덮밥닭살 닭 덮밥</span>
+                    <span><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-half.png" width="15"></span>
+                </li>
+                <li class="star_con">
+                    <span>3</span>
+                    <span>22.04.10</span>
+                    <span>덮밥닭살 닭 덮밥</span>
+                    <span><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-full.png" width="15"><img src="../img/common/star-none.png" width="15"></span>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div id="slide-up-modal" class="modal br">
+        <div class="content">
+            <div class="bt_closed"  id="slide-up-close"><img src="../img/common/bt_left_close.png" width="24"></div>
+            <div class="modal_title">조회 기간</div>
+            <hr>
+            
+            <div class="mb5 mt20"><strong>계절</strong></div>
+            <div class="radio-quarter">
+                <input type="radio" id="quarter1" name="radio" value="봄" checked>
+                <label for="quarter1" class="m-frist">봄<span>3월~ 5월</span></label>
+            
+                <input type="radio" id="quarter2" name="radio" value="여름">
+                <label for="quarter2">여름<span>6월~8월</span></label>
+            
+                <input type="radio" id="quarter3" name="radio" value="가을">
+                <label for="quarter3">가을<span>9월~11월</span></label> 
+    
+                <input type="radio" id="quarter4" name="radio" value="겨울">
+                <label for="quarter4">겨울<span>12월~2월</span></label> 
+    
+            </div> 
+            <div class="mb5 mt20">2022년</div>
+            <div class="check-date">
+                <input type="checkbox" id="11" name="check-date1" value="11" >
+                <label for="11">1</label>
+            
+                <input type="checkbox" id="22" name="check-date1" value="22" >
+                <label for="22">2</label>
+            
+                <input type="checkbox" id="33" name="check-date1" value="33" >
+                <label for="33">3</label> 
+
+                <input type="checkbox" id="44" name="check-date1" value="44" checked>
+                <label for="44">4</label> 
+
+                <input type="checkbox" id="55" name="check-date1" value="55" checked>
+                <label for="55">5</label>
+
+                <input type="checkbox" id="66" name="check-date1" value="66" checked>
+                <label for="66">6</label>  
+            </div>  
+
+
+            <div class="mb5 mt20">2021년</div>
+            <div class="check-date">
+                <input type="checkbox" id="1" name="check-date" value="1" checked>
+                <label for="1" class="m-frist">1</label>
+            
+                <input type="checkbox" id="2" name="check-date" value="2" checked>
+                <label for="2">2</label>
+            
+                <input type="checkbox" id="3" name="check-date" value="3">
+                <label for="3">3</label> 
+
+                <input type="checkbox" id="4" name="check-date" value="4">
+                <label for="4">4</label> 
+
+                <input type="checkbox" id="5" name="check-date" value="5">
+                <label for="5">5</label>
+        
+                <input type="checkbox" id="6" name="check-date" value="6">
+                <label for="6">6</label>
+            </div>
+            <div class="check-date">    
+                <input type="checkbox" id="7" name="check-date" value="7" >
+                <label for="7">7</label>
+            
+                <input type="checkbox" id="8" name="check-date" value="8">
+                <label for="8">8</label>
+            
+                <input type="checkbox" id="9" name="check-date" value="9">
+                <label for="9">9</label> 
+
+                <input type="checkbox" id="10" name="check-date" value="10">
+                <label for="10">10</label> 
+
+                <input type="checkbox" id="11" name="check-date" value="11">
+                <label for="11">11</label>
+
+                <input type="checkbox" id="12" name="check-date" value="12">
+                <label for="12">12</label>    
+            </div>      
+              
+        
+        </div>
+    
+    </div>
+    
+
+
+
+    <script src="../js/common.js"></script>
+    <script src="../js/flat-ui.js"></script>
+    <script src="../js/application.js"></script>
+
+</body>
+</html>

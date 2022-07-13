@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="../css/reset.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/mstyle.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/font.css" >
+    <link rel="stylesheet" type="text/css"  href="../css/flat-ui.css" >
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+
+    <style>
+
+        
+    </style>
+
+    <div class="sub_tit">
+        <span><a href="so_scale.html"><img src="../img/common/bt_Back.png" class="img-half"></a></span>
+        저울 요청 <a href="course_add.html" class="sub_tit_right" id="cancel_opener">요청 취소</a>
+    </div>
+
+    <div class="sub_container">
+        <div class="scale_msgbx">
+            <img src="../img/common/icon_ok.png" width="86">
+            <hr>
+            <strong>저울 <em>2</em>대가 요청되었습니다. </strong>
+            <span>2022년 4월 12일</span>
+            <hr class="msg_line">
+            <span>홍길동</span>
+            <span>02-3456-7890</span>
+          
+        </div>
+
+        <div class="msgbx">
+            상담사가 연락 후 방문하여<br>저울 설치를 도와드리겠습니다.
+        </div>
+    </div>
+
+
+
+ <!--요청취소-->
+ <div id="scale_cancel" class="dialog">
+    <p class="dialog_content tac mb40 big_font">
+        <span class="fui-alert-circle"></span> 저울을 취소 하시겠습니까?            
+    </p> 
+    <div class="tac mb40">
+        <button type="button" id="modal_cancel" class="btn_s_line wp80 mr10"><span class="text">닫기</span></button>
+        <button type="button" id="modal_ok" class="btn_s_red wp130"><span class="text">취소 확인</span></button>
+    </div>  
+</div>
+
+<script src="../js/jquery-simple-dialog.js"></script>
+<script>
+    $('#scale_cancel').simpleDialog({
+    opener: '#cancel_opener',
+    closer: '#modal_ok,#modal_cancel',
+    modal: true
+    });
+</script>
+
+
+
+    <script src="../js/common.js"></script>
+    <script src="../js/flat-ui.js"></script>
+    <script src="../js/application.js"></script>
+
+</body>
+</html>
